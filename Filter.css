@@ -1,0 +1,330 @@
+body {
+    margin: 0%;
+}
+
+.nav_bar {
+    width: 100%;
+    height: 100px;
+    background-color: #F0F0F0;
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top:0px;
+}
+
+.nav_header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    left: 35px;
+    top: 7px;
+    position:absolute;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav_home {
+    position: absolute;
+    text-decoration: none;
+    top: 30px;
+    font-size: 27px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    right: 150px;
+    color:black;
+    right: 170px;
+}
+
+.nav_home::before {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    width:0;
+    height: 3px;
+    background-color: #5392F7;
+    transition: width 0.5s ease-out;
+}
+
+.nav_home:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav_logout {
+    position: absolute;
+    text-decoration: none;
+    top: 30px;
+    font-size: 27px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    right: 40px;
+    color:black;
+}
+
+.nav_logout::before {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    width:0;
+    height: 3px;
+    background-color: #5392F7;
+    transition: width 0.5s ease-out;
+}
+
+.nav_logout:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* starts with laptop gallery */
+
+.laptop_gallery {
+    padding-top: 130px;
+    width: 100%;
+    height: 100%;
+}
+
+.mix {
+    float: left;
+    width: 30.33%;
+}
+
+.content {
+    background-color: #f0F0F0;
+    padding: 20px;
+    height: 420px;
+    width: 450px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.laptop_gallery .mix {
+    padding: 22px;
+}
+
+.laptop_img{
+    width:350px;
+    height: auto;
+    position: relative;
+    bottom: 20px;
+}
+
+.Laptop_name {
+    margin:0px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+}
+.XPS {
+    top: -35px;
+}
+.zenbook {
+    width: 425px;
+    height: auto;
+    position:relative;
+    bottom: 55px;
+}
+
+.air {
+    width: 450px;
+    height: auto;
+    position: relative;
+    bottom: -30px;
+}
+
+.pavilion {
+    width: 350px;
+    height: auto;
+    position: relative;
+    bottom: -15px;
+}
+
+.swift {
+    width: 350px;
+    height: auto;
+    position: relative;
+    bottom: 25px;
+}
+
+.ideapad {
+    width: 400px;
+    height: auto;
+    position: relative;
+    bottom: -30px;
+}
+
+.G15 {
+    width: 280px;
+    height: auto;
+    position: relative;
+    bottom: -25px;
+}
+
+.blade {
+    width: 450px;
+    height: auto;
+    position: relative;
+    bottom: 15px;
+}
+
+.thinkpad {
+    width: 470px;
+    height: auto;
+    position: relative;
+    bottom: -5px;
+}
+
+.laptop_link {
+   text-decoration: none; 
+   position: absolute;
+   font-size: 24px;
+   font-family: 'Inter', sans-serif;
+   color: #5392F7;
+   text-decoration-line: underline;
+}
+
+.Dell {
+    top: 510px;
+    left: 160px;
+}
+
+.razer {
+    top: 510px;
+    left: 700px;
+}
+
+.lenovo {
+    top: 510px;
+    right: 160px;
+}
+
+
+/* filter content css */
+
+.logo_filter {
+    top:20px;
+    position: relative;
+    width: 300px;
+    left: -250px;
+}
+
+.filter-content {
+    position: relative;
+    top: 100px;
+}
+
+.question {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    left:-200px;
+    top: -90px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.filter {
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    left: -180px;
+    top: -90px;
+    background-color: #E7E5E5;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100px;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filter_flex {
+    display: inline-flex;
+}
+
+.back {
+    position: absolute;
+    bottom: -135px;
+    left: -240px;
+    font-size: 25px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+    background-color: #5392F7;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black; 
+}
+
+.background-wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: -1;
+    left: 0px;
+}
+
+/* ------------------------------overlay ---------------------------- */
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#FFF;
+    background-color: #FFF;
+}
+
+.closebtn {
+    position: absolute;
+    bottom: 25px;
+    right: 80px;
+    font-size: 25px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+    background-color: #5392F7;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.openbtn {
+    font-size: 20px;
+    position: relative;
+    left: 710px;
+    background-color: #5392F7;
+    border: none;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5 ease-out;
+}
+
+.openbtn:hover {
+    background-color: #8db7fb;
+    cursor: pointer;
+}
+
+.overlay-content {
+    display: block;
+    text-align: left;
+    position: absolute;
+    left:20%;
+    top: 0px;
+}
+

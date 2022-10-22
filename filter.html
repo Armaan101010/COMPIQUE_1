@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+<title> Compique </title>
+<link rel="stylesheet" href="Filter.css">
+<link rel="icon" href="/images/Logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+        <div class="nav_bar">
+            <h1 class="nav_header"> COMPIQUE </h1>
+            <a class="nav_home" href="Home.html"> Home </a>
+            <a class="nav_logout" href="Login.html"> Log out </a>
+        </div>
+
+    <!------------------------------------------------------------------------------ laptops suggested ------------------------------------->
+
+    <section class="laptop_gallery">
+        
+        <div class="mix check2 check3 check5 check6 check11" style="display: block">
+            <div class="content">
+                <h1 class="Laptop_name"> Dell XPS 13 </h1>
+                <img class="laptop_img XPS" src="/Laptop images/XPS_front_view.png">
+                <a class="laptop_link Dell" href="/laptop information/Dell.html"> Get Detailed View </a> 
+            </div>
+        </div>
+        <div class="mix check1 check3 check4 check7 check8 check 9" style="display: none">
+            <div class="content">
+                <h1 class="Laptop_name"> Asus Zenbook Pro 16X </h1>
+                <img class="laptop_img zenbook" src="/Laptop images/Zenbook_front_view.png">
+                </div>
+            </div>
+        </div>
+        <div class="mix check2 check5 check6 check11" style="display: none">
+            <div class="content">
+                <h1 class="Laptop_name"> Macbook Air M2 </h1>
+                <img class="laptop_img air" src="/Laptop images/macbook_front_view.png">
+            </div>
+        </div>
+        <div class="mix check3 check5 check6 check8 check10" style="display: none">
+            <div class="content">
+                <h1 class="Laptop_name"> HP pavilion 14 Oled </h1>
+                <img class="laptop_img pavilion" src="/Laptop images/pavilion_front_view.png">
+            </div>
+        </div>
+        <div class="mix check2 check3 check5 check6 check10" style="display: none">
+            <div class="content">
+                <h1 class="Laptop_name"> Acer Swift 3 </h1>
+                <img class="laptop_img swift" src="/Laptop images/swift_front_view.png">
+            </div>
+        </div>
+        <div class="mix check2 check4 check7 check8 check10" style="display: none">
+            <div class="content">
+                <h1 class="Laptop_name"> Lenovo Ideapad 5i Gen 7 </h1>
+                <img class="laptop_img ideapad" src="/Laptop images/ideapad_front_view.png">
+            </div>
+        </div>
+        <div class="mix check1 check4 check7 check8 check11" style="display: none">
+            <div class="content">
+                <h1 class="Laptop_name"> Dell G15 </h1>
+                <img class="laptop_img G15" src="/Laptop images/g15_front_view.png">
+            </div>
+        </div>
+        <div class="mix check1 check5 check6 check9" style="display: block">
+            <div class="content">
+                <h1 class="Laptop_name"> Razer blade 14 </h1>
+                <img class="laptop_img blade" src="/Laptop images/blade_front_view.png">
+                <a class="laptop_link razer" href="/laptop information/Razer.html"> Get Detailed View </a>
+            </div>
+        </div>
+        <div class="mix check1 check4 check6 check9" style="display: block">
+            <div class="content">
+                <h1 class="Laptop_name"> Lenovo Thinkpad X1 Extreme </h1>
+                <img class="laptop_img thinkpad" src="/Laptop images/thinkpad_front_view.png">
+                <a class="laptop_link lenovo" href="/laptop information/Lenovo.html"> Get Detailed View </a>
+            </div>
+        </div>
+    </section>
+    <button class="openbtn" onclick="openNav()"> Open filters </button>
+    <img class="background-wave" src="/images/waves/filter.png">
+    
+    <!---------------------------------------------------------------------------------laptop filters---------------------------------------------------------->
+    <div id="filters-overlay" class="overlay">
+        <button class="closebtn" onclick="closeNav()"> Continue &#8599; </button>
+        <div class="overlay-content">
+
+            <img class="logo_filter" src="/images/Screenshot 2022-09-17 125635.png">
+            <a href="Home.html" class="back"> &#8598; Back </a>
+    
+            <div class="filter-content">
+                <div class="button-row-1">
+                    <h1 class="question"> 1. Will you Use this laptop for Gaming?</h1>
+                    <div class="filter_flex">
+                        <div>
+                            <imput type="checkbox" id="checkbox1" class="filter" data-filter=".check1">
+                            <label for="checkbox1" class="checkbox-lable"> Yes </label>
+                        </div>
+                        <div>
+                            <imput class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+                            <label class="checkbox-lable" for="checkbox2"> No </label>
+                        </div>
+                        <div>
+                            <imput class="filter" data-filter=".check3" type="button" id="checkbox3" onclick="this.style.backgroundColor = '#5392F7'; this.style.color = '#FFF';">
+                            <label class="checkbox-lable" for="checkbox3" onclick="this.style.backgroundColor = '#5392F7'"> Partially </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-row-2">
+                    <h1 class="question"> 2. Do you prefer a laptop large in size?</h1>
+                        <div class="filter_flex">
+                        <div>
+                            <imput class="filter" data-filter=".check4" type="checkbox" id="checkbox4">
+                            <label class="checkbox-lable" for="checkbox4"> Yes </label>
+                        </div>
+                        <div>
+                            <imput class="filter" data-filter=".check5" type="button" id="checkbox5" onclick="this.style.backgroundColor = '#5392F7'; this.style.color = '#FFF';">
+                            <label class="checkbox-lable" for="checkbox5"> No </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-row-3">
+                    <h1 class="question"> 3. Will you constantly move around with the laptop? </h1>
+                    <div class="filter_flex">
+                        <div>
+                            <imput class="filter" data-filter=".check6" type="button" id="checkbox6" onclick="this.style.backgroundColor = '#5392F7'; this.style.color = '#FFF';">
+                            <label class="checkbox-lable" for="checkbox6"> Yes </label>
+                        </div>
+                        <div>
+                            <imput class="filter" data-filter=".check7" type="checkbox" id="checkbox7">
+                            <label class="checkbox-lable" for="checkbox7"> No </label>
+                        </div>
+                        <div>
+                            <imput class="filter" data-filter=".check8" type="checkbox" id="checkbox8">
+                            <label class="checkbox-lable" for="checkbox8"> Sometimes </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-row-4">
+                    <h1 class="question"> 4. Will you run a high requirement software like Blender or Photoshop on the laptop? </h1>
+                    <div class="filter_flex">
+                        <div>
+                            <imput class="filter" data-filter=".check9" type="checkbox" id="checkbox9">
+                            <label class="checkbox-lable" for="checkbox9"> Yes </label>
+                        </div>
+                        <div>
+                            <imput class="filter" data-filter=".check10" type="checkbox" id="checkbox10">
+                            <label class="checkbox-lable" for="checkbox10"> No </label>
+                        </div>
+                        <div>
+                            <imput class="filter" data-filter=".check11" type="button" id="checkbox11" onclick="this.style.backgroundColor = '#5392F7'; this.style.color = '#FFF';">
+                            <label class="checkbox-lable" for="checkbox11"> Sometimes </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="overlay.js"></script>
+<script src="Filter.js"></script>
+</body>
+    
+
+      
+      

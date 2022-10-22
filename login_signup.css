@@ -1,0 +1,128 @@
+body {
+margin:0%
+}
+.logo {
+width:17%;
+height:7%;
+position: absolute;
+left: 1%;
+top: 1.5%;
+} 
+
+.illustration_1 {
+    width: 43%;
+    height: auto;
+    position: absolute;
+    right: 2%;
+    top: 18%;
+}
+
+.wave_1 {
+width:100%;
+height:100%;
+position: absolute;
+opacity: 20%;
+image-rendering:pixelated;
+z-index: -1;
+}
+
+.login_container {
+top:170px;
+left:150px;
+position: absolute;
+}
+
+.form_title {
+    font-family: 'Open Sans', sans-serif;
+    font-style:normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: #44474A;
+    margin: 0%;
+}
+
+.form__link {
+    color: #000000;
+    position:relative;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    margin: 0%;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    font-size: 105%;
+}
+
+.form__link::before {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    width:0;
+    height: 2px;
+    background-color: #5392F7;
+    transition: width 0.5s ease-out;
+}
+
+.form__link:hover::before {
+    width: 100%;
+}
+
+.Email {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 28px;  
+    font-weight:600;  
+    margin:0%;
+    color:#44474A;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.Passwords {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 28px;  
+    font-weight:600;  
+    margin:0%;
+    color:#44474A;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.form__input {
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    border-color: transparent;
+    font-family:'Open Sans', sans-serif; 
+    outline-color: #5392F7;
+    background-color:#f8f8f8;
+    padding-left:12px;
+}
+
+.form__button {
+    width: 230px;
+    height: 40px;
+    position:relative;
+    top:34px;
+    background: #5392F7;
+    border-radius: 10px;
+    border-color:transparent;
+    text-align: justify;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 15px;
+    transition: 0.5s ease-out;
+}
+
+.form__button:hover {
+    background-color: #8db7fb;
+    cursor: pointer;
+}
+
+.Signup_container {
+    top:170px;
+    left:150px;
+    position: absolute;   
+}

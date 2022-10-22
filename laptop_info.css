@@ -1,0 +1,131 @@
+.body {
+    margin: 0px;
+}
+.nav_bar {
+    width: 99%;
+    height: 100px;
+    background-color: #F0F0F0;
+    position: absolute;
+    border-radius: 20px;
+    top:0px;
+    margin-top: 8px;
+}
+
+.nav_header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    left: 35px;
+    top: 7px;
+    position:absolute;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav_home {
+    position: absolute;
+    text-decoration: none;
+    top: 30px;
+    font-size: 27px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color:black;
+    right: 150px;
+}
+
+.nav_home::before {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    width:0;
+    height: 3px;
+    background-color: #5392F7;
+    transition: width 0.5s ease-out;
+}
+
+.nav_home:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav_back {
+    position: absolute;
+    text-decoration: none;
+    top: 30px;
+    font-size: 27px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color:black;
+    right: 40px;
+}
+
+.nav_back::before {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    width:0;
+    height: 3px;
+    background-color: #5392F7;
+    transition: width 0.5s ease-out;
+}
+
+.nav_back:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+.laptop_images {
+    height: 50%;
+    margin-right: 8px;
+    background-color: #F0F0F0;
+    width: 50%;
+    position: absolute;
+    text-align: center;
+    border-radius: 20px;
+    top: 30%;
+    left: 24%;
+}
+
+.XPS {
+    height: 250px;  
+    top: 45px;
+    position: relative;
+}
+
+.laptop_name {
+    top:130px;
+    position: absolute;
+    left:42%;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+}
+
+.Specs {
+    font-size: 30px;
+    color: #5392F7;
+}
+
+.specs_box {
+    position: absolute;
+    top: 33%;
+    left: 40px;
+    line-height: 25px;
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+}
+
+.reviews {
+    right: 30px;
+    position: absolute;
+    width: 22.5%;
+    font-family: 'Inter', sans-serif;
+    top: 30%;
+}
+
+.review {
+    font-size: 30px;
+    color: #5392F7;
+}
+
+.revieww {
+    font-size: 16px;
+}
